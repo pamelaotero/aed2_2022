@@ -10,7 +10,7 @@
 # Se a expressao contiver uma lista ou uma lista de lista, entao a funcao
 # "eval()" pode gerar uma lista ou uma matriz.
 #
-# Execute este programa e digite o seguinte no teclado (em uma linha so):
+# Execute este programa e digite o seguinte no teclado (em uma i so):
 #
 #    [[11, 12, 13], [21, 22, 23], [31, 32, 33]]
 #
@@ -18,19 +18,20 @@
 # para a funcao "eval()". A funcao "eval()" vai transformar isso em
 # uma lista de listas
 
-
-def le_lista():
-    print("Digite uma matriz PAMELAO")
-    matriz = eval(input())
     # [ [a11, a12, a13],
     #   [a21, a22, a23],
     #   [a31, a32, a33] ]
+
+
+def verifica_identidade(matriz):
     for linha in matriz:
         for elem in linha:
-              
             print(elem, end=' ')
         print()
+
 if __name__=="__main__":
-    le_lista()
+    print("Digite uma matriz PAMELAO")
+    matriz = eval(input())
+    verifica_identidade(matriz)
 
 
