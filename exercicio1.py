@@ -1,20 +1,14 @@
-# Entre com o tamanho da lista
+# criando a lista
+lista = []
 
-tam = int(input(''))
+# entrando com o tamanho da lista
+tam = int(input(""))
 
-# Entre com os elementos da lista separados por espaço
-input_string = input('')
+# iterando até o intervalo 
+for i in range(0, tam):
+  valor = int(input())
+  lista.append(valor) # adicionando elemento na lista
 
-lista = input_string.split()
-
-# imprimindo a lista
-print('lista: ', lista)
-
-# converte os valores da lista para inteiro
-for i in range(tam):
-  lista[i] = int(lista[i])
-
+# print(lista)
 lista.reverse()
-
 print(lista)
-
