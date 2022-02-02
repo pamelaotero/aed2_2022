@@ -1,9 +1,11 @@
+# Criação da lista
 lista = []
-tam = 5
+# Definindo o tamanho da lista conforme a questão
+tam = 10
 
+# Fazendo a interação
 for i in range(tam):
-     num = int(input(''))
+     valor = int(input(''))
+     lista.append(valor) # Adicionando elemento na lista
 
-print(max(lista), min(lista))
-
-
+print(min(lista), max(lista))
